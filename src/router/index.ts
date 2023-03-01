@@ -43,18 +43,20 @@ const router = createRouter({
 });
 
 // 挂载路由导航守卫
-router.beforeEach((to, from, next) => {
-  if (to.path === "/signUp" && !localStorage.getItem("role")) {
-    store.dispatch("getRole").then(() => {
-      if (store.state.role === "admin") {
-        next();
-      } else {
-        next("/notFound");
-      }
-    });
-  } else if (to.path === "/signUp" && localStorage.getItem("role")) {
-    next();
-  }
-});
+// router.beforeEach((to, from, next) => {
+//   if (to.path === "/signUp" && !localStorage.getItem("role")) {
+//     store.dispatch("getRole").then(() => {
+//       if (store.state.role === "admin") {
+//         next();
+//       } else {
+//         next("/notFound");
+//       }
+//     });
+//   } else if (to.path === "/signUp" && localStorage.getItem("role")) {
+//     next();
+//   } else {
+//     next();
+//   }
+// });
 
 export default router;

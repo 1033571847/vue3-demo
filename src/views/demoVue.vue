@@ -51,7 +51,7 @@
 <style lang="less" scoped>
 .header {
   display: flex;
-  height: 44px;
+  height: 64px;
   background-color: #262f3e;
   justify-content: space-between;
   padding: 10px 20px;
@@ -62,6 +62,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 14px;
     .title {
       display: flex;
       color: white;
@@ -96,6 +97,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 14px;
     .message-list {
       display: flex;
       list-style: none;
@@ -122,6 +124,7 @@
       display: flex;
       align-items: center;
       color: #c1c6c8;
+      margin-top: -14px;
       .head-img {
         display: block;
         width: 25px;
